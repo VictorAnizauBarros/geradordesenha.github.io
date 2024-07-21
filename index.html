@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gerador de Senha</title>
+</head>
+<body>
+    <main id="container">
+        <img src="_bda58a87-88c1-4924-9580-5a7630c6d798-removebg-preview.png" id="padlock_img" alt="">
+        <h2 id="title">Gerador de Senha</h2>
+
+        <div id="password_container">
+            <span id="password"></span>
+            <button id="copy">
+                <i class="fa-solid fa-copy"></i>
+            </button>
+        </div>
+
+        <div id="password_items">
+
+            <div class="item">
+                <input type="number" name="size" id="size">
+                <label for="size">
+                    Quantidade de Caracteres
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include_uppercase" id="include_uppercase">
+                <label for="include_uppercase">
+                    Incluir letra maiúscula
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include_lowercase" id="include_lowercase">
+                <label for="include_lowercase">
+                    Incluir letra minúscula
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include_number" id="include_number">
+                <label for="include_number">
+                    Incluir número
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include_special_charactere" id="include_special_charactere">
+                <label for="include_special_charactere">
+                    Incluir Caractere Especial
+                </label>
+            </div>
+            <button id="generate">Gerar Senha</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
